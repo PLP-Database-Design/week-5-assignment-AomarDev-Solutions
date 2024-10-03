@@ -61,4 +61,11 @@
 // });
 
 
+// Array Practice
+let numbers = [5, 3, 8, 5, 2, 3, 7, 8, 1];
+let uniqueNumbers = [...new Set(numbers)].sort((a,b) => 
+    a - b);
+console.log(uniqueNumbers);
+
+
 

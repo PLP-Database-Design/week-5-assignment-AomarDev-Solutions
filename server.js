@@ -56,6 +56,7 @@ db.connect((err) => {
 });
 
 //  Your Codes here
+// ejs configuration
 
 app.set('view engine', 'ejs');
 
@@ -63,7 +64,8 @@ app.set('views', __dirname + '/views');
 
 //  Your Code goes up there
 
-
+// get patient
+//route
 app.get('/data', (req, res) => {
     //retrieve data 
     db.query('SELECT * FROM patients', (err, results) => {
